@@ -1,5 +1,12 @@
 # hello-world specific ignores
-targets/
+target/
+
+
+# Visual Studio Code
+.settings/
+.classpath
+.factorypath
+.project
 .vscode/
 
 

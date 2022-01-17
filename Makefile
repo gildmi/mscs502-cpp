@@ -10,7 +10,7 @@ all: compile-doc lint run
 
 clean:
 	@echo $(SEPARATOR)
-	rm -rf targets/*
+	rm -rf target/*
 
 clean-doc:
 	@echo $(SEPARATOR)
@@ -18,7 +18,7 @@ clean-doc:
 
 compile: clean
 	@echo $(SEPARATOR)
-	$(CC) -Wall -o targets/$(APP) src/$(APP)/main.cpp
+	$(CC) -Wall -o target/$(APP) src/$(APP)/main.cpp
 
 compile-doc: clean-doc
 	@echo $(SEPARATOR)
@@ -59,10 +59,10 @@ lint-tests:
 
 run: compile
 	@echo $(SEPARATOR)
-	@targets/$(APP)
+	@target/$(APP)
 
 test:
 	@echo $(SEPARATOR)
-	$(CC) -pthread tests/*.cpp -lgtest -lgtest_main -o targets/$(APP)-test
+	$(CC) -pthread tests/*.cpp -lgtest -lgtest_main -o target/$(APP)-test
 	@echo $(SEPARATOR)
-	targets/$(APP)-test
+	target/$(APP)-test
