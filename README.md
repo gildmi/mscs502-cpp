@@ -26,7 +26,7 @@ Issue a `make run` or run the target directly.  For conveince, the default `make
 2. Build the mscs502 image with `docker build -t mscs502 .`
 3. Run the container based on mscs502 image with `docker run -it --rm -v $PWD:/hello-world mscs502`
 4. Use VSCode or your IDE of choice to edit your code locally.  HINT: Run `code .` from the terminal when in the folder
-5. Compile and run the code as you would locally from teh Docker container bash prompt
+5. Compile and run the code as you would locally fromh  Docker container bash prompt
 
 ## Tests
 [GoogleTest](https://github.com/google/googletest) is used as the Test Framework. To execute unit tests run `make test`.
